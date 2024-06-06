@@ -5,7 +5,7 @@
   tasks:
   - name: Copy script to instance
     copy:
-      src: script.sh
+      src: ../script.sh
       dest: /tmp/script.sh
       mode: '0755'
 
