@@ -1,18 +1,18 @@
-- name: echo
+- name: Execute a script on all instances
   hosts: all
   gather_facts: yes
 
   tasks:
-  - name: Copy defender script to instance
+  - name: Copy script to instance
     copy:
-      src: defender.sh
-      dest: /tmp/defender.sh
+      src: script.sh
+      dest: /tmp/script.sh
       mode: '0755'
 
-  - name: Execute defender script
+  - name: Execute the script
     become: yes
-    command: bash /tmp/defender.sh
+    command: bash /tmp/script.sh
 
-  - name: Remove defender script
+  - name: Remove the script
     become: yes
-    command: sudo rm -f /tmp/defender.sh
+    command: sudo rm -f /tmp/script.sh
