@@ -1,4 +1,7 @@
-# GCP Compute Instance using Ansible
+# Ansible GCP
+
+## Description
+This project contains an implementation of an Ansible playbook to interact with Google Cloud Platform (GCP) services.
 
 ## Prerequisites
 - Ansible: 2.17.0
