@@ -1,0 +1,10 @@
+plugin: google.cloud.gcp_compute
+projects:
+-
+auth_kind: serviceaccount
+service_account_file: {? {ansible_gcp_service_acccount: ''} : ''}
+filters:
+- status = RUNNING
+
+values:
+-
