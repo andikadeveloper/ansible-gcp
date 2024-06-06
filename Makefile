@@ -1,2 +1,2 @@
 run:
-	ansible-playbook main.yaml
+	ansible-playbook install-script.yaml
