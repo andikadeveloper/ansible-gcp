@@ -1,10 +1,10 @@
 plugin: google.cloud.gcp_compute
 projects:
--
+- YOUR_PROJECT_ID
 auth_kind: serviceaccount
 service_account_file: sa.json
 filters:
 - status = RUNNING
 
 values:
--
+- YOUR_COMPUTE_INSTANCE_NAME
