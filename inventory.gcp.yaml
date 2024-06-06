@@ -2,7 +2,7 @@ plugin: google.cloud.gcp_compute
 projects:
 -
 auth_kind: serviceaccount
-service_account_file: {? {ansible_gcp_service_acccount: ''} : ''}
+service_account_file: sa.json
 filters:
 - status = RUNNING
 
